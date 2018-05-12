@@ -17,6 +17,77 @@
   <![endif]-->
 </head>
 <body>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="Name Surname">
+<p><link rel="icon" href="media/favicon.ico"></p>
+<title>
+Fab Academy 2015 - Name Surname
+</title>
+<!-- Bootstrap core CSS -->
+<p><link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"></p>
+<!-- Custom styles for this template -->
+<p><link href="media/fabacademy.css" rel="stylesheet"></p>
+<!-- 3D files viewer -->
+<script type="text/javascript" src="media/jsc3d_ie.min.js"></script>
+<script type="text/javascript" src="media/jsc3d.min.js"></script>
+<script type="text/javascript" src="media/jsc3d.webgl.js"></script>
+<script type="text/javascript" src="media/jsc3d.touch.js"></script>
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]><script src="bootstrap/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="bootstrap/js/ie-emulation-modes-warning.js"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<!-- Load the menu file -->
+<script>
+    function menu() {
+                      $('#exercises').load("exercises-menu.html");
+                      $('#project').load("project-menu.html");
+                      $('#cclicense').load("license.html");
+                      }
+    </script>
+</head>
+<body onload="menu()">
+<pre><code>&lt;!-- Static navbar --&gt;
+&lt;nav class=&quot;navbar navbar-default navbar-static-top&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;navbar-header&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbar&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;navbar&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;a class=&quot;navbar-brand&quot; href=&quot;index.html&quot;&gt;Name Surname&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;navbar&quot; class=&quot;navbar-collapse collapse&quot;&gt;
+      &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;about.html&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;dropdown&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;Exercises &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+          &lt;ul id=&quot;exercises&quot; class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;dropdown&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;Final Project &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+          &lt;ul id=&quot;project&quot; class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;contact.html&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/div&gt;&lt;!--/.nav-collapse --&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;div class=&quot;container&quot;&gt;</code></pre>
+<hr />
 <h1 id="week-1"><strong><em>Week 1:</em></strong></h1>
 </body>
 </html>
