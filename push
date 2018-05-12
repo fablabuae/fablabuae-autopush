@@ -1,20 +1,25 @@
 # This script automate the "Push" process to Fabacademy Archive (for Manjaro linux and windows 10)
 # Done by Eng Hashim Nabil Al Sakkaf from FabLab UAE with help of Eng Francisco Sanchez from BeachLab
-# To work directly it should be saved in the Desktop and the cloned archive should be saved in Desktop
+# To work directly it should be saved in the Desktop, and the cloned archive should be saved in Desktop
+# This script assumes that the repo name is "fabacademy" and located in the Desktop
+# Tested with Manjaro linux and windows 10, it should work for all operating systems
+# Hashim Nabil AL Sakkaf, 2018
+#------------------------------------------------------------------------------
+
 if [ "$#" -gt 0 ]  # check for user comment
 then
-echo script to push to fablabuae repo
-cd ~/Desktop/fablabuae/students
+echo Automatic Pushing Activated
+cd ~/Desktop
 echo the folder size is:
-size= du -sh 154  # check the size of the directory that will be pushed
+size= du -sh fabacademy  # check the size of the directory that will be pushed
 read -p "file size is ok?" -n 1 -r  # ask the user to approve the size
 if [[  $REPLY =~ ^[Yy]$ ]]
 then
   echo converting markdown to html
-  cd ~/Desktop/fablabuae/students/154
+  cd ~/Desktop/fabacademy
   for (( i=1; i<=19; i++))
   do
-  cd ~/Desktop/fablabuae/students/154/week$i
+  cd ~/Desktop/fabacademy/week$i
   pandoc week$i.md -f markdown -t html -c mycss.css -s -o week$i.html
   done
   echo pulling
@@ -32,6 +37,3 @@ fi
 else
 echo commit please my friend
 fi
-
-# Hashim Nabil AL Sakkaf, 2017
-# CC-SA-BY 4.0 License
